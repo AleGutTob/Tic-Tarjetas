@@ -1,0 +1,44 @@
+:root {
+    --color-principal: rgb(0, 0, 0);
+    --color-secundario:rgb(83, 19, 19);
+    --color-fondo: yellow;
+    --espaciado: 20px;
+    --radio-borde: 50px;
+    --duracion-transicion: 0.3s;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-fondo)
+}
+header {
+    background-color: var(--color-principal);
+    color: rgb(248, 248, 248);
+    padding: var(--espaciado);
+    text-align: center;
+}
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: var(--espaciado);
+    margin: var(--espaciado);
+}
+.tarjetas {
+    background-color: blueviolet;
+    padding: var(--espaciado);
+    border-radius: var(--radio-borde);
+    width: 200px;
+    text-align: center;
+}
+button {
+    background-color: var(--color-secundario);
+    color: rgb(243, 239, 29);
+    border: none;
+    padding: 18px;
+    border-radius: var(--radio-borde);
+    cursor: pointer;
+    transition: background-color var(--duracion-transicion);
+}
+button:hover {
+    background-color: var(--color-principal);
+}
